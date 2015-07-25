@@ -27,11 +27,10 @@ namespace :twenty_nine_hours do
           if test("kill -0 #{twenty_nine_hours_pid}")
             info 'stopping 29hours...'
             execute :kill, twenty_nine_hours_pid
-            execute :rm, fetch(:twenty_nine_hours_pid)
           else
             info 'cleaning up dead 29hours pid...'
-            execute :rm, fetch(:twenty_nine_hours_pid)
           end
+          execute :rm, fetch(:twenty_nine_hours_pid)
         else
           info '29hours is not running...'
         end
