@@ -26,7 +26,7 @@ set :deploy_to, '/opt/masutaka-29hours'
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w{29hours/vendor/bundle}
+set :linked_dirs, %w{29hours/log 29hours/tmp/pids 29hours/vendor/bundle}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -44,6 +44,14 @@ namespace :deploy do
     on roles(:all) do
       # Use `capture` instead of `execute` for not displaying environment variable in CircleCI
       capture "cd #{release_path}/29hours && curl -Ls -o settings.yml #{ENV.fetch('SETTINGS_FILE_PATH')}"
+    end
+  end
+
+  desc 'Restart 29hours'
+  after :publishing, :restart do
+    on roles(:app) do
+      invoke 'twenty_nine_hours:stop'
+      invoke 'twenty_nine_hours:start'
     end
   end
 end
