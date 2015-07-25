@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+test:
+  override:
+    - /bin/true
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./script/deploy-circleci.sh
