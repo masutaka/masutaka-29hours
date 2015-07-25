@@ -34,6 +34,8 @@ set :deploy_to, '/opt/masutaka-29hours'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+set :git_strategy, Capistrano::Git::SubmoduleStrategy
+
 namespace :deploy do
 
   after :restart, :clear_cache do
