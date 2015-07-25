@@ -1,0 +1,3 @@
+[submodule "29hours"]
+	path = 29hours
+	url = git@github.com:june29/29hours.git
