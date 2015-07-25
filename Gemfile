@@ -4,5 +4,6 @@ ruby '2.2.2'
 group :development do
   gem 'capistrano', require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano-foreman', require: false
   gem 'capistrano-git-submodule-strategy', require: false
 end

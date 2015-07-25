@@ -8,6 +8,9 @@ GEM
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    capistrano-foreman (1.2.0)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
     capistrano-git-submodule-strategy (0.1.17)
       capistrano (~> 3.1)
     colorize (0.7.7)
@@ -27,6 +30,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   capistrano-bundler
+  capistrano-foreman
   capistrano-git-submodule-strategy
 
 BUNDLED WITH
