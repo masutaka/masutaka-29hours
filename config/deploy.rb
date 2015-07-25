@@ -43,7 +43,7 @@ namespace :deploy do
   before :updated, :setting_file do
     on roles(:all) do
       # Use `capture` instead of `execute` for not displaying environment variable in CircleCI
-      capture "cd #{release_path}/29hours && curl -Ls -o settings.yml #{ENV.fetch('SETTINGS_FILE_PATH')}"
+      capture "cd #{release_path.join('29hours')} && curl -Ls -o settings.yml #{ENV.fetch('SETTINGS_FILE_PATH')}"
     end
   end
 
