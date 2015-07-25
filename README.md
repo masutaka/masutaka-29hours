@@ -5,3 +5,7 @@ Deploy [29hours](https://github.com/june29/29hours) to masutaka.net
 ## Automatic deployment
 
 When any commits are pushed to master, [CircleCI will deploy to masutaka.net](https://circleci.com/gh/masutaka/masutaka-29hours/tree/master).
+
+## Automatic `$ bundle update`
+
+A pull request regularly creates by a trigger https://dashboard.heroku.com/apps/bu-masutaka-29hours
