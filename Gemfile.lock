@@ -31,7 +31,7 @@ GEM
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    sys-proctable (0.9.8)
+    sys-proctable (0.9.9)
     yajl-ruby (1.1.0)
 
 PLATFORMS
