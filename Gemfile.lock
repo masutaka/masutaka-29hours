@@ -3,7 +3,7 @@ GEM
   specs:
     bini (0.7.0)
       sys-proctable
-    capistrano (3.4.0)
+    capistrano (3.4.1)
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
