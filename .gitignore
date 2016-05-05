@@ -1,3 +1,4 @@
 /.bundle/config
 /.envrc
+/log/capistrano.log
 /vendor/bundle
