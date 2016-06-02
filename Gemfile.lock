@@ -14,7 +14,7 @@ GEM
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-git-submodule-strategy (0.1.20)
+    capistrano-git-submodule-strategy (0.1.22)
       capistrano (~> 3.1)
     capistrano-harrow (0.5.1)
     httparty (0.11.0)
